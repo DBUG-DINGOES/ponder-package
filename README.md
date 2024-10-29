@@ -35,13 +35,13 @@ This library includes various React components for spinners and animations, help
 
 ## Current Components 🛠️
 
-| Name                    | Import Statement                                                       | Description                                                                    |
-| ----------------------- | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Wave Spinner            | `import Wave from 'components/Wave'`                                   | Animated wave with customizable size, colors, speed, and opacity.              |
-| Dot Spinner             | `import DotSpinner from 'components/DotSpinner'`                       | Sequentially jumping dots creating a wave-like loading effect.                 |
-| Sequential Box Morphing | `import SequentialBoxMorphing from 'components/SequentialBoxMorphing'` | Morphing boxes that shift between squares and circles in a sequence.           |
-| Circular Spinner        | `import CircularSpinner from 'components/CircularSpinner'`             | Rotating circular spinner with customizable speed, direction, and color.       |
-| Moving Circles          | `import MovingCircles from 'components/MovingCircles'`                 | Animated set of morphing circles with customizable size, colors, and duration. |
+| Name                  | Import Statement                                                   | Description                                                                    |
+| --------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Wave Spinner          | `import {Wave} from "@holmesdev/ponder-spinners"`                  | Animated wave with customizable size, colors, speed, and opacity.              |
+| Dot Spinner           | `import {DotSpinner} from "@holmesdev/ponder-spinners"`            | Sequentially jumping dots creating a wave-like loading effect.                 |
+| SequentialBoxMorphing | `import {SequentialBoxMorphing  from "@holmesdev/ponder-spinners"` | Morphing boxes that shift between squares and circles in a sequence.           |
+| Circular Spinner      | `import {CircularSpinner} from "@holmesdev/ponder-spinners"`       | Rotating circular spinner with customizable speed, direction, and color.       |
+| Moving Circles        | `import {MovingCircles} from "@holmesdev/ponder-spinners"`         | Animated set of morphing circles with customizable size, colors, and duration. |
 
 ---
 
@@ -50,25 +50,25 @@ This library includes various React components for spinners and animations, help
 To install and set up the library, run:
 
 ```bash
-npm i <package-name>
-npm i styled-components
+
+npm i @holmesdev/ponder-spinners
 ```
 
 Or using Yarn:
 
 ```bash
-yarn add <package-name>
-npm add styled-components
+
+npm add @holmesdev/ponder-spinners
 ```
 
 ---
 
 ## Usage
 
-### **Wave Component**
+### **Wave Spinner**
 
 ```javascript
-import Wave from "components/Wave";
+import { Wave } from "@holmesdev/ponder-spinners";
 
 <Wave size="70px" color={["#22333B", "#EAE0D5"]} speed="2s" opacity={1} />;
 ```
@@ -76,7 +76,7 @@ import Wave from "components/Wave";
 ### **Dot Spinner**
 
 ```javascript
-import DotSpinner from "components/DotSpinner";
+import { DotSpinner } from "@holmesdev/ponder-spinners";
 
 <DotSpinner colors={["#FF5733", "#33FF57", "#3357FF"]} />;
 ```
@@ -84,23 +84,32 @@ import DotSpinner from "components/DotSpinner";
 ### **Circular Spinner**
 
 ```javascript
-import CircularSpinner from "components/CircularSpinner";
+import { CircularSpinner } from "@holmesdev/ponder-spinners";
 
-<CircularSpinner color="blue" speed="1.5s" opacity={0.7} direction="360deg" />;
+<CircularSpinner
+  color1="#FF6F61"
+  color2="#ffa9a1"
+  opacity1={0.5}
+  opacity2={1}
+  speed="1s"
+  opacity={0.7}
+  direction="360deg"
+  size="100"
+/>;
 ```
 
 ### **Sequential Box Morphing**
 
 ```javascript
-import SequentialBoxMorphing from "components/SequentialBoxMorphing";
+import { SequentialBoxMorphing } from "@holmesdev/ponder-spinners";
 
-<SequentialBoxMorphing color={["#ff0000", "#00ff00", "#0000ff", "#ff00ff"]} />;
+<SequentialBoxMorphing color={["#22333B", "#FF6F61", "#ffa9a1", "#22333B"]} />;
 ```
 
 ### **MovingCircles Component**
 
 ```javascript
-import MovingCircles from "components/MovingCircles";
+import { MovingCircles } from "@holmesdev/ponder-spinners";
 
 <MovingCircles
   size={90}
@@ -132,12 +141,15 @@ import MovingCircles from "components/MovingCircles";
 
 ### Circular Spinner
 
-| Property    | Type   | Description                                                    |
-| ----------- | ------ | -------------------------------------------------------------- |
-| `color`     | string | Color of the circular spinner. Defaults to `#D97292`.          |
-| `speed`     | string | Speed of the rotation (e.g., `2s`). Defaults to `2s`.          |
-| `opacity`   | number | Opacity of the spinner (0 to 1). Defaults to `0.5`.            |
-| `direction` | string | Direction of rotation (e.g., `360deg`). Defaults to `-360deg`. |
+| Property    | Type   | Description                                                     |
+| ----------- | ------ | --------------------------------------------------------------- |
+| `color1`    | string | Color 1 of the circular spinner. Defaults to `#FF6F61`.         |
+| `color2`    | string | Color 2 of the circular spinner. Defaults to `#ffa9a1`.         |
+| `opacity1`  | number | Opacity of the color 1. Defaults to `1`.                        |
+| `opacity2`  | number | Opacity of the color 2. Defaults to `0.5`.                      |
+| `speed`     | string | Speed of the rotation (e.g., `1s`). Defaults to `1s`.           |
+| `direction` | string | Direction of rotation (e.g., `360deg`). Defaults to `-360deg`.  |
+| `size`      | string | The size of the spinner (e.g., `100`). Defaults to `100       ` |
 
 ### Sequential Box Morphing
 

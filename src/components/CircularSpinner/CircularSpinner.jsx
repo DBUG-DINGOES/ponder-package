@@ -23,11 +23,11 @@ const StyledSVG = styled.svg`
 `;
 
 export function CircularSpinner({
-  color1 = "#D97292",
-  color2 = "blue",
+  color1 = "#FF6F61",
+  color2 = "#ffa9a1",
   opacity1 = 0.5,
   opacity2 = 1,
-  speed = "2s",
+  speed = "1s",
   direction = "-360deg",
   size = "100",
 }) {
