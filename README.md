@@ -35,13 +35,13 @@ This library includes various React components for spinners and animations, help
 
 ## Current Components 🛠️
 
-| Name     | Import Statement                                       | Description                                                                    |
-| -------- | ------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| Wave     | `import {Wave} from "@holmesdev/ponder-spinners"`      | Animated wave with customizable size, colors, speed, and opacity.              |
-| Dots     | `import {Dots} from "@holmesdev/ponder-spinners"`      | Sequentially jumping dots creating a wave-like loading effect.                 |
-| PulseBox | `import {PulseBox}  from "@holmesdev/ponder-spinners"` | Morphing boxes that shift between squares and circles in a sequence.           |
-| Spin     | `import {Spin} from "@holmesdev/ponder-spinners"`      | Rotating circular spinner with customizable speed, direction, and color.       |
-| Circles  | `import {Circles} from "@holmesdev/ponder-spinners"`   | Animated set of morphing circles with customizable size, colors, and duration. |
+| Name     | Import Statement                                      | Description                                                                    |
+| -------- | ----------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Spin     | `import {Spin} from "@holmesdev/ponder-spinners"`     | Rotating circular spinner with customizable speed, direction, and color.       |
+| Dots     | `import {Dots} from "@holmesdev/ponder-spinners"`     | Sequentially jumping dots creating a wave-like loading effect.                 |
+| PulseBox | `import {PulseBox} from "@holmesdev/ponder-spinners"` | Morphing boxes that shift between squares and circles in a sequence.           |
+| Wave     | `import {Wave} from "@holmesdev/ponder-spinners"`     | Animated wave with customizable size, colors, speed, and opacity.              |
+| Circles  | `import {Circles} from "@holmesdev/ponder-spinners"`  | Animated set of morphing circles with customizable size, colors, and duration. |
 
 ---
 
@@ -65,22 +65,6 @@ npm add @holmesdev/ponder-spinners
 
 ## Usage
 
-### **Wave**
-
-```javascript
-import { Wave } from "@holmesdev/ponder-spinners";
-
-<Wave size="70px" color={["#22333B", "#EAE0D5"]} speed="2s" opacity={1} />;
-```
-
-### **Dot**
-
-```javascript
-import { Dots } from "@holmesdev/ponder-spinners";
-
-<Dots colors={["#FF5733", "#33FF57", "#3357FF"]} />;
-```
-
 ### **Spin**
 
 ```javascript
@@ -98,12 +82,28 @@ import { CircularSpinner } from "@holmesdev/ponder-spinners";
 />;
 ```
 
+### **Dot**
+
+```javascript
+import { Dots } from "@holmesdev/ponder-spinners";
+
+<Dots colors={["#FF5733", "#33FF57", "#3357FF"]} />;
+```
+
 ### **Pulse Box**
 
 ```javascript
 import { PulseBox } from "@holmesdev/ponder-spinners";
 
 <PulseBox color={["#22333B", "#FF6F61", "#ffa9a1", "#22333B"]} />;
+```
+
+### **Wave**
+
+```javascript
+import { Wave } from "@holmesdev/ponder-spinners";
+
+<Wave size="70px" color={["#22333B", "#EAE0D5"]} speed="2s" opacity={1} />;
 ```
 
 ### **Circles**
