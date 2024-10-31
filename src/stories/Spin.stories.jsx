@@ -1,11 +1,11 @@
-import { CircularSpinner } from "../components/CircularSpinner/CircularSpinner.jsx";
+import { Spin } from "../components/Spin/Spin.jsx";
 import * as React from "react";
 
 export default {
-  title: "Circular Spinner",
-  component: CircularSpinner,
+  title: "Spin",
+  component: Spin,
 };
-const Template = (args) => <CircularSpinner {...args} />;
+const Template = (args) => <Spin {...args} />;
 
 //copy function using bind
 export const Default = Template.bind({});

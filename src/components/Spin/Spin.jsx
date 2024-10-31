@@ -22,7 +22,7 @@ const StyledSVG = styled.svg`
   opacity: ${(props) => props.opacity};
 `;
 
-export function CircularSpinner({
+export function Spin({
   color1 = "#FF6F61",
   color2 = "#ffa9a1",
   opacity1 = 0.5,
@@ -56,7 +56,7 @@ export function CircularSpinner({
     </>
   );
 }
-CircularSpinner.propTypes = {
+Spin.propTypes = {
   color1: PropTypes.string,
   color2: PropTypes.string,
 

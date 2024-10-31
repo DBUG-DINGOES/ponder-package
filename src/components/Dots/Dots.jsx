@@ -31,7 +31,7 @@ const StyledCircle = styled.circle`
   }
 `;
 //delay between each child
-export function DotSpinner({ colors = ["#22333B", "#FF6F61", "#B7AEA3"] }) {
+export function Dots({ colors = ["#22333B", "#FF6F61", "#B7AEA3"] }) {
   const dots = Array.from({ length: colors.length });
 
   return (
@@ -55,9 +55,9 @@ export function DotSpinner({ colors = ["#22333B", "#FF6F61", "#B7AEA3"] }) {
   );
 }
 
-DotSpinner.propTypes = {
+Dots.propTypes = {
   colors: PropTypes.arrayOf(PropTypes.string),
   duration: PropTypes.string,
 };
 
-export default DotSpinner;
+export default Dots;
