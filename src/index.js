@@ -1,6 +1,6 @@
-export { CircularSpinner } from "./components/CircularSpinner";
+export { Spin } from "./components/Spin";
 
-export { DotSpinner } from "./components/DotSpinner";
-export { SequentialBoxMorphing } from "./components/SequentialBoxMorphing";
+export { Dots } from "./components/Dots";
+export { PulseBox } from "./components/PulseBox";
 export { Wave } from "./components/Wave";
-export { MovingCircles } from "./components/MovingCircles";
+export { Circles } from "./components/Circles";

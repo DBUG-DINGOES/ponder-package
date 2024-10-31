@@ -1,11 +1,11 @@
-import { MovingCircles } from "../components/MovingCircles/MovingCircles.jsx";
+import { Circles } from "../components/Circles/Circles.jsx";
 import * as React from "react";
 
 export default {
-  title: "Moving Circles",
-  component: MovingCircles,
+  title: "Circles",
+  component: Circles,
 };
-const Template = (args) => <MovingCircles {...args} />;
+const Template = (args) => <Circles {...args} />;
 
 //copy function using bind
 export const Default = Template.bind({});

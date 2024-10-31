@@ -36,7 +36,7 @@ export const Box = styled.div`
   animation-delay: ${(props) => props.delay || "0s"};
 `;
 
-export const SequentialBoxMorphing = ({
+export const PulseBox = ({
   colors = ["#22333B", "#FF6F61", "#ffa9a1", "#22333B"],
 }) => {
   return (
@@ -51,4 +51,4 @@ export const SequentialBoxMorphing = ({
   );
 };
 
-export default SequentialBoxMorphing;
+export default PulseBox;

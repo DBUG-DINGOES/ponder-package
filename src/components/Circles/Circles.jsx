@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-export const MovingCircles = ({
+export const Circles = ({
   size = 90,
   color1 = "#FF6F61",
   color2 = "#22333B",
@@ -126,7 +126,7 @@ export const MovingCircles = ({
   );
 };
 
-MovingCircles.propTypes = {
+Circles.propTypes = {
   size: PropTypes.number,
   color1: PropTypes.string,
   color2: PropTypes.string,

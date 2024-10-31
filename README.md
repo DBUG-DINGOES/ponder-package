@@ -35,13 +35,13 @@ This library includes various React components for spinners and animations, help
 
 ## Current Components 🛠️
 
-| Name                  | Import Statement                                                   | Description                                                                    |
-| --------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| Wave Spinner          | `import {Wave} from "@holmesdev/ponder-spinners"`                  | Animated wave with customizable size, colors, speed, and opacity.              |
-| Dot Spinner           | `import {DotSpinner} from "@holmesdev/ponder-spinners"`            | Sequentially jumping dots creating a wave-like loading effect.                 |
-| SequentialBoxMorphing | `import {SequentialBoxMorphing  from "@holmesdev/ponder-spinners"` | Morphing boxes that shift between squares and circles in a sequence.           |
-| Circular Spinner      | `import {CircularSpinner} from "@holmesdev/ponder-spinners"`       | Rotating circular spinner with customizable speed, direction, and color.       |
-| Moving Circles        | `import {MovingCircles} from "@holmesdev/ponder-spinners"`         | Animated set of morphing circles with customizable size, colors, and duration. |
+| Name     | Import Statement                                       | Description                                                                    |
+| -------- | ------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Wave     | `import {Wave} from "@holmesdev/ponder-spinners"`      | Animated wave with customizable size, colors, speed, and opacity.              |
+| Dots     | `import {Dots} from "@holmesdev/ponder-spinners"`      | Sequentially jumping dots creating a wave-like loading effect.                 |
+| PulseBox | `import {PulseBox}  from "@holmesdev/ponder-spinners"` | Morphing boxes that shift between squares and circles in a sequence.           |
+| Spin     | `import {Spin} from "@holmesdev/ponder-spinners"`      | Rotating circular spinner with customizable speed, direction, and color.       |
+| Circles  | `import {Circles} from "@holmesdev/ponder-spinners"`   | Animated set of morphing circles with customizable size, colors, and duration. |
 
 ---
 
@@ -65,7 +65,7 @@ npm add @holmesdev/ponder-spinners
 
 ## Usage
 
-### **Wave Spinner**
+### **Wave**
 
 ```javascript
 import { Wave } from "@holmesdev/ponder-spinners";
@@ -73,15 +73,15 @@ import { Wave } from "@holmesdev/ponder-spinners";
 <Wave size="70px" color={["#22333B", "#EAE0D5"]} speed="2s" opacity={1} />;
 ```
 
-### **Dot Spinner**
+### **Dot**
 
 ```javascript
-import { DotSpinner } from "@holmesdev/ponder-spinners";
+import { Dots } from "@holmesdev/ponder-spinners";
 
-<DotSpinner colors={["#FF5733", "#33FF57", "#3357FF"]} />;
+<Dots colors={["#FF5733", "#33FF57", "#3357FF"]} />;
 ```
 
-### **Circular Spinner**
+### **Spin**
 
 ```javascript
 import { CircularSpinner } from "@holmesdev/ponder-spinners";
@@ -98,20 +98,20 @@ import { CircularSpinner } from "@holmesdev/ponder-spinners";
 />;
 ```
 
-### **Sequential Box Morphing**
+### **Pulse Box**
 
 ```javascript
-import { SequentialBoxMorphing } from "@holmesdev/ponder-spinners";
+import { PulseBox } from "@holmesdev/ponder-spinners";
 
-<SequentialBoxMorphing color={["#22333B", "#FF6F61", "#ffa9a1", "#22333B"]} />;
+<PulseBox color={["#22333B", "#FF6F61", "#ffa9a1", "#22333B"]} />;
 ```
 
-### **MovingCircles Component**
+### **Circles**
 
 ```javascript
-import { MovingCircles } from "@holmesdev/ponder-spinners";
+import { Circles } from "@holmesdev/ponder-spinners";
 
-<MovingCircles
+<Circles
   size={90}
   color1="#FF6F61"
   color2="#22333B"
@@ -124,22 +124,7 @@ import { MovingCircles } from "@holmesdev/ponder-spinners";
 
 ## Component Properties 📋
 
-### Wave Component
-
-| Property  | Type             | Description                                                                   |
-| --------- | ---------------- | ----------------------------------------------------------------------------- |
-| `size`    | string           | Size of the SVG (width and height). Defaults to `30px`.                       |
-| `color`   | array of strings | Array of colors for the wave animation. Defaults to `["#22333B", "#EAE0D5"]`. |
-| `speed`   | string           | Speed of the animation (e.g., `2s`). Defaults to `2s`.                        |
-| `opacity` | number           | Opacity of the wave (0 to 1). Defaults to `1`.                                |
-
-### Dot Spinner
-
-| Property | Type             | Description                                                                   |
-| -------- | ---------------- | ----------------------------------------------------------------------------- |
-| `colors` | array of strings | Colors for each of the dots. Defaults to `["#22333B", "#EAE0D5", "#C6AC8F"]`. |
-
-### Circular Spinner
+### Spin
 
 | Property    | Type   | Description                                                     |
 | ----------- | ------ | --------------------------------------------------------------- |
@@ -151,14 +136,29 @@ import { MovingCircles } from "@holmesdev/ponder-spinners";
 | `direction` | string | Direction of rotation (e.g., `360deg`). Defaults to `-360deg`.  |
 | `size`      | string | The size of the spinner (e.g., `100`). Defaults to `100       ` |
 
-### Sequential Box Morphing
+### Dots
+
+| Property | Type             | Description                                                                   |
+| -------- | ---------------- | ----------------------------------------------------------------------------- |
+| `colors` | array of strings | Colors for each of the dots. Defaults to `["#22333B", "#EAE0D5", "#C6AC8F"]`. |
+
+### Pulse Box
 
 | Property | Type             | Description                                                                                |
 | -------- | ---------------- | ------------------------------------------------------------------------------------------ |
 | `color`  | array of strings | Colors for the morphing boxes. Defaults to `["#2f3e46", "#e0e0e0", "#6b6252", "#ccb69b"]`. |
 | `delay`  | string           | Delay between animations. Pre-configured but can be customized if needed.                  |
 
-### MovingCircles Component
+### Wave
+
+| Property  | Type             | Description                                                                   |
+| --------- | ---------------- | ----------------------------------------------------------------------------- |
+| `size`    | string           | Size of the SVG (width and height). Defaults to `30px`.                       |
+| `color`   | array of strings | Array of colors for the wave animation. Defaults to `["#22333B", "#EAE0D5"]`. |
+| `speed`   | string           | Speed of the animation (e.g., `2s`). Defaults to `2s`.                        |
+| `opacity` | number           | Opacity of the wave (0 to 1). Defaults to `1`.                                |
+
+### Circles
 
 | Property   | Type   | Description                                                   |
 | ---------- | ------ | ------------------------------------------------------------- |
