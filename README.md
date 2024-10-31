@@ -68,9 +68,9 @@ npm add @holmesdev/ponder-spinners
 ### **Spin**
 
 ```javascript
-import { CircularSpinner } from "@holmesdev/ponder-spinners";
+import { Spin } from "@holmesdev/ponder-spinners";
 
-<CircularSpinner
+<Spin
   color1="#FF6F61"
   color2="#ffa9a1"
   opacity1={0.5}
@@ -82,12 +82,12 @@ import { CircularSpinner } from "@holmesdev/ponder-spinners";
 />;
 ```
 
-### **Dot**
+### **Dots**
 
 ```javascript
 import { Dots } from "@holmesdev/ponder-spinners";
 
-<Dots colors={["#FF5733", "#33FF57", "#3357FF"]} />;
+<Dots colors={["#22333B", "#FF6F61", "#B7AEA3"]} />;
 ```
 
 ### **Pulse Box**
