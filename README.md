@@ -58,7 +58,7 @@ Or using Yarn:
 
 ```bash
 
-npm add @holmesdev/ponder-spinners
+npm yarn @holmesdev/ponder-spinners
 ```
 
 ---
@@ -76,7 +76,6 @@ import { Spin } from "@holmesdev/ponder-spinners";
   opacity1={0.5}
   opacity2={1}
   speed="1s"
-  opacity={0.7}
   direction="360deg"
   size="100"
 />;
