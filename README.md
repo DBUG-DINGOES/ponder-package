@@ -90,7 +90,7 @@ import { Spin } from "@holmesdev/ponder-spinners";
   opacity2={1}
   speed="1s"
   direction="360deg"
-  size="100"
+  size={100}
 />;
 ```
 
@@ -99,7 +99,7 @@ import { Spin } from "@holmesdev/ponder-spinners";
 ```javascript
 import { Dots } from "@holmesdev/ponder-spinners";
 
-<Dots colors={["#22333B", "#FF6F61", "#B7AEA3"]} />;
+<Dots color1="#22333B" color2="#FF6F61" color3="#B7AEA3" />;
 ```
 
 ### **Pulse Box**
@@ -107,7 +107,12 @@ import { Dots } from "@holmesdev/ponder-spinners";
 ```javascript
 import { PulseBox } from "@holmesdev/ponder-spinners";
 
-<PulseBox color={["#22333B", "#FF6F61", "#ffa9a1", "#22333B"]} />;
+<PulseBox
+  color1="#22333B"
+  color2="#FF6F61"
+  color3="#ffa9a1"
+  color4="#22333B"
+/>;
 ```
 
 ### **Wave**
@@ -115,7 +120,7 @@ import { PulseBox } from "@holmesdev/ponder-spinners";
 ```javascript
 import { Wave } from "@holmesdev/ponder-spinners";
 
-<Wave size="70px" color={["#22333B", "#EAE0D5"]} speed="2s" opacity={1} />;
+<Wave size={70} color1="#22333B" color2="#EAE0D5" speed="2s" opacity={1} />;
 ```
 
 ### **Circles**
@@ -200,6 +205,6 @@ Our Mentors for guiding us through the development process; Alex, Amberle and Da
 
 ## License
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/4DEVS-Holmesglen/DBUG-DINGOES/blob/main/MIT%20License)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/DBUG-DINGOES/blob/main/MIT%20License)
 
 Available for open-source consumption under MIT licensing. See [MIT License](https://opensource.org/licenses/MIT) for more information.
