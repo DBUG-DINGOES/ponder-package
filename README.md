@@ -61,6 +61,13 @@ Or using Yarn:
 npm yarn @holmesdev/ponder-spinners
 ```
 
+> [!IMPORTANT] > [Styled-components](https://styled-components.com/docs/basics#installation) is the JavaScript CSS library used to build our components. To ensure that they work as intended, you will need to separately install `styled-components` within both the `devDependencies` & `peerDependencies` inside of your `package.json` upon installation of the package.
+>
+> You <ins>MUST</ins> also ensure that you are:
+>
+> - Using React.js v18.3.1 or higher
+> - Using styled-components v6.1.13 or higher
+
 ---
 
 ## Usage

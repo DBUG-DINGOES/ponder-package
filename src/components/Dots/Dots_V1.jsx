@@ -1,17 +1,18 @@
 import React from "react";
+
 import PropTypes from "prop-types";
 import styled, { keyframes } from "styled-components";
 
 const jump = keyframes`
-  0%, 60%, 100% {
-    transform: initial;
-  }
+	0%, 60%, 100% {
+		transform: initial;
+	}
 
-  30% {
-    transform: translateY(-15px);
-  }
+	30% {
+		transform: translateY(-15px);
+	}
+  
 `;
-
 const StyledSVG = styled.svg`
   color: ${(props) => props.color};
 `;
@@ -29,13 +30,10 @@ const StyledCircle = styled.circle`
     animation-delay: -0.9s;
   }
 `;
+//delay between each child
+export function Dots({ colors = ["#22333B", "#FF6F61", "#B7AEA3"] }) {
+  const dots = Array.from({ length: colors.length });
 
-// Dots Component with standardized color props
-export function Dots({
-  color1 = "#22333B",
-  color2 = "#FF6F61",
-  color3 = "#B7AEA3",
-}) {
   return (
     <StyledSVG
       xmlns="http://www.w3.org/2000/svg"
@@ -44,17 +42,22 @@ export function Dots({
       viewBox="0 0 100 100"
       fill="none"
     >
-      <StyledCircle cx="20" cy="49.5" r="8" fill={color1} />
-      <StyledCircle cx="50" cy="49.5" r="8" fill={color2} />
-      <StyledCircle cx="80" cy="49.5" r="8" fill={color3} />
+      {dots.map((dot, index) => (
+        <StyledCircle
+          cx={(index + 1) * 20}
+          cy="49.5"
+          r="8"
+          fill={colors[index]}
+          key={index}
+        />
+      ))}
     </StyledSVG>
   );
 }
 
 Dots.propTypes = {
-  color1: PropTypes.string,
-  color2: PropTypes.string,
-  color3: PropTypes.string,
+  colors: PropTypes.arrayOf(PropTypes.string),
+  duration: PropTypes.string,
 };
 
 export default Dots;
