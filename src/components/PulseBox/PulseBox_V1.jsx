@@ -37,18 +37,15 @@ export const Box = styled.div`
 `;
 
 export const PulseBox = ({
-  color1 = "#22333B",
-  color2 = "#FF6F61",
-  color3 = "#ffa9a1",
-  color4 = "#22333B",
+  colors = ["#22333B", "#FF6F61", "#ffa9a1", "#22333B"],
 }) => {
   return (
     <ScaledContainer>
       <Container>
-        <Box color={color1} delay="0s" />
-        <Box color={color2} delay="1s" />
-        <Box color={color3} delay="3s" />
-        <Box color={color4} delay="2s" />
+        <Box color={colors[0]} delay="0s" />
+        <Box color={colors[1]} delay="1s" />
+        <Box color={colors[2]} delay="3s" />
+        <Box color={colors[3]} delay="2s" />
       </Container>
     </ScaledContainer>
   );
