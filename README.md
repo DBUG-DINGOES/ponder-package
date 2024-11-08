@@ -197,4 +197,4 @@ Our Mentors for guiding us through the development process; Alex, Amberle and Da
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/4DEVS-Holmesglen/DBUG-DINGOES/blob/main/MIT%20License)
 
-Available for open-source consumption under MIT licensing. See [MIT License](https://github.com/DBUG-DINGOES/Sync-test/blob/main/MIT%20License) for more information.
+Available for open-source consumption under MIT licensing. See [MIT License](https://opensource.org/licenses/MIT) for more information.
