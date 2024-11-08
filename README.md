@@ -68,6 +68,12 @@ npm yarn @holmesdev/ponder-spinners
 > - Using React.js v18.3.1 or higher
 > - Using styled-components v6.1.13 or higher
 
+## Latest Package Version
+
+|                                           Name                                           |                         Version                          |
+| :--------------------------------------------------------------------------------------: | :------------------------------------------------------: |
+| [`@holmesdev/ponder-spinners`](https://www.npmjs.com/package/@holmesdev/ponder-spinners) | ![NPM](https://img.shields.io/npm/v/@holmesdev/sync.svg) |
+
 ---
 
 ## Usage
@@ -186,3 +192,9 @@ This library is inspired by various popular UI/UX components and spinners to ens
 ### Special Thanks 🎉
 
 Our Mentors for guiding us through the development process; Alex, Amberle and Daniel
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/4DEVS-Holmesglen/DBUG-DINGOES/blob/main/MIT%20License)
+
+Available for open-source consumption under MIT licensing. See [MIT License](https://github.com/DBUG-DINGOES/Sync-test/blob/main/MIT%20License) for more information.
