@@ -150,25 +150,30 @@ import { Circles } from "@holmesdev/ponder-spinners";
 
 ### Dots
 
-| Property | Type             | Description                                                                   |
-| -------- | ---------------- | ----------------------------------------------------------------------------- |
-| `colors` | array of strings | Colors for each of the dots. Defaults to `["#22333B", "#EAE0D5", "#C6AC8F"]`. |
+| Property | Type   | Description                                        |
+| -------- | ------ | -------------------------------------------------- |
+| `color1` | string | Color for the first dot. Defaults to `"#22333B"`.  |
+| `color2` | string | Color for the second dot. Defaults to `"#EAE0D5"`. |
+| `color3` | string | Color for the third dot. Defaults to `"#C6AC8F"`.  |
 
 ### Pulse Box
 
-| Property | Type             | Description                                                                                |
-| -------- | ---------------- | ------------------------------------------------------------------------------------------ |
-| `color`  | array of strings | Colors for the morphing boxes. Defaults to `["#2f3e46", "#e0e0e0", "#6b6252", "#ccb69b"]`. |
-| `delay`  | string           | Delay between animations. Pre-configured but can be customized if needed.                  |
+| Property | Type   | Description                                        |
+| -------- | ------ | -------------------------------------------------- |
+| `color1` | string | Color for the first box. Defaults to `"#22333B"`.  |
+| `color2` | string | Color for the second box. Defaults to `"#FF6F61"`. |
+| `color3` | string | Color for the third box. Defaults to `"#ffa9a1"`.  |
+| `color4` | string | Color for the fourth box. Defaults to `"#22333B"`. |
 
 ### Wave
 
-| Property  | Type             | Description                                                                   |
-| --------- | ---------------- | ----------------------------------------------------------------------------- |
-| `size`    | string           | Size of the SVG (width and height). Defaults to `30px`.                       |
-| `color`   | array of strings | Array of colors for the wave animation. Defaults to `["#22333B", "#EAE0D5"]`. |
-| `speed`   | string           | Speed of the animation (e.g., `2s`). Defaults to `2s`.                        |
-| `opacity` | number           | Opacity of the wave (0 to 1). Defaults to `1`.                                |
+| Property  | Type   | Description                                             |
+| --------- | ------ | ------------------------------------------------------- |
+| `size`    | string | Size of the SVG (width and height). Defaults to `30px`. |
+| `color1`  | string | Color for the first wave. Defaults to `"#22333B"`.      |
+| `color2`  | string | Color for the second wave. Defaults to `"#EAE0D5"`.     |
+| `speed`   | string | Speed of the animation (e.g., `2s`). Defaults to `2s`.  |
+| `opacity` | number | Opacity of the wave (0 to 1). Defaults to `1`.          |
 
 ### Circles
 
