@@ -58,8 +58,21 @@ Or using Yarn:
 
 ```bash
 
-npm add @holmesdev/ponder-spinners
+npm yarn @holmesdev/ponder-spinners
 ```
+
+> [!IMPORTANT] > [Styled-components](https://styled-components.com/docs/basics#installation) is the JavaScript CSS library used to build our components. To ensure that they work as intended, you will need to separately install `styled-components` within both the `devDependencies` & `peerDependencies` inside of your `package.json` upon installation of the package.
+>
+> You <ins>MUST</ins> also ensure that you are:
+>
+> - Using React.js v18.3.1 or higher
+> - Using styled-components v6.1.13 or higher
+
+## Latest Package Version
+
+|                                           Name                                           |                         Version                          |
+| :--------------------------------------------------------------------------------------: | :------------------------------------------------------: |
+| [`@holmesdev/ponder-spinners`](https://www.npmjs.com/package/@holmesdev/ponder-spinners) | ![NPM](https://img.shields.io/npm/v/@holmesdev/sync.svg) |
 
 ---
 
@@ -76,9 +89,8 @@ import { Spin } from "@holmesdev/ponder-spinners";
   opacity1={0.5}
   opacity2={1}
   speed="1s"
-  opacity={0.7}
   direction="360deg"
-  size="100"
+  size={100}
 />;
 ```
 
@@ -87,7 +99,7 @@ import { Spin } from "@holmesdev/ponder-spinners";
 ```javascript
 import { Dots } from "@holmesdev/ponder-spinners";
 
-<Dots colors={["#22333B", "#FF6F61", "#B7AEA3"]} />;
+<Dots color1="#22333B" color2="#FF6F61" color3="#B7AEA3" />;
 ```
 
 ### **Pulse Box**
@@ -95,7 +107,12 @@ import { Dots } from "@holmesdev/ponder-spinners";
 ```javascript
 import { PulseBox } from "@holmesdev/ponder-spinners";
 
-<PulseBox color={["#22333B", "#FF6F61", "#ffa9a1", "#22333B"]} />;
+<PulseBox
+  color1="#22333B"
+  color2="#FF6F61"
+  color3="#ffa9a1"
+  color4="#22333B"
+/>;
 ```
 
 ### **Wave**
@@ -103,7 +120,7 @@ import { PulseBox } from "@holmesdev/ponder-spinners";
 ```javascript
 import { Wave } from "@holmesdev/ponder-spinners";
 
-<Wave size="70px" color={["#22333B", "#EAE0D5"]} speed="2s" opacity={1} />;
+<Wave size={70} color1="#22333B" color2="#EAE0D5" speed="2s" opacity={1} />;
 ```
 
 ### **Circles**
@@ -138,25 +155,30 @@ import { Circles } from "@holmesdev/ponder-spinners";
 
 ### Dots
 
-| Property | Type             | Description                                                                   |
-| -------- | ---------------- | ----------------------------------------------------------------------------- |
-| `colors` | array of strings | Colors for each of the dots. Defaults to `["#22333B", "#EAE0D5", "#C6AC8F"]`. |
+| Property | Type   | Description                                        |
+| -------- | ------ | -------------------------------------------------- |
+| `color1` | string | Color for the first dot. Defaults to `"#22333B"`.  |
+| `color2` | string | Color for the second dot. Defaults to `"#EAE0D5"`. |
+| `color3` | string | Color for the third dot. Defaults to `"#C6AC8F"`.  |
 
 ### Pulse Box
 
-| Property | Type             | Description                                                                                |
-| -------- | ---------------- | ------------------------------------------------------------------------------------------ |
-| `color`  | array of strings | Colors for the morphing boxes. Defaults to `["#2f3e46", "#e0e0e0", "#6b6252", "#ccb69b"]`. |
-| `delay`  | string           | Delay between animations. Pre-configured but can be customized if needed.                  |
+| Property | Type   | Description                                        |
+| -------- | ------ | -------------------------------------------------- |
+| `color1` | string | Color for the first box. Defaults to `"#22333B"`.  |
+| `color2` | string | Color for the second box. Defaults to `"#FF6F61"`. |
+| `color3` | string | Color for the third box. Defaults to `"#ffa9a1"`.  |
+| `color4` | string | Color for the fourth box. Defaults to `"#22333B"`. |
 
 ### Wave
 
-| Property  | Type             | Description                                                                   |
-| --------- | ---------------- | ----------------------------------------------------------------------------- |
-| `size`    | string           | Size of the SVG (width and height). Defaults to `30px`.                       |
-| `color`   | array of strings | Array of colors for the wave animation. Defaults to `["#22333B", "#EAE0D5"]`. |
-| `speed`   | string           | Speed of the animation (e.g., `2s`). Defaults to `2s`.                        |
-| `opacity` | number           | Opacity of the wave (0 to 1). Defaults to `1`.                                |
+| Property  | Type   | Description                                             |
+| --------- | ------ | ------------------------------------------------------- |
+| `size`    | string | Size of the SVG (width and height). Defaults to `30px`. |
+| `color1`  | string | Color for the first wave. Defaults to `"#22333B"`.      |
+| `color2`  | string | Color for the second wave. Defaults to `"#EAE0D5"`.     |
+| `speed`   | string | Speed of the animation (e.g., `2s`). Defaults to `2s`.  |
+| `opacity` | number | Opacity of the wave (0 to 1). Defaults to `1`.          |
 
 ### Circles
 
@@ -180,3 +202,9 @@ This library is inspired by various popular UI/UX components and spinners to ens
 ### Special Thanks 🎉
 
 Our Mentors for guiding us through the development process; Alex, Amberle and Daniel
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/DBUG-DINGOES/blob/main/MIT%20License)
+
+Available for open-source consumption under MIT licensing. See [MIT License](https://opensource.org/licenses/MIT) for more information.

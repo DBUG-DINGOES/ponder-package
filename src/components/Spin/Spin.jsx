@@ -29,7 +29,7 @@ export function Spin({
   opacity2 = 1,
   speed = "1s",
   direction = "-360deg",
-  size = "100",
+  size = "100px",
 }) {
   return (
     <>
