@@ -3,6 +3,11 @@
   "version": "1.0.26",
   "description": "",
   "main": "dist/index.js",
+  "homepage": "https://ponder-gold.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DBUG-DINGOES/ponder-package"
+  },
   "module": "dist/index.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
