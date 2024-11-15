@@ -8,6 +8,14 @@
     "type": "git",
     "url": "https://github.com/DBUG-DINGOES/ponder-package"
   },
+  "keywords": [
+    "spinners",
+    "spinner",
+    "loaders",
+    "loading",
+    "loaders",
+    "react-spinners"
+  ],
   "module": "dist/index.es.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
